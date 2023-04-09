@@ -6,15 +6,26 @@ import SearchBar from '../../components/Home/SearchBar';
 import { dataList } from '../../constants';
 import './styles.css';
 
+
 const Home = () => {
   const [selectedCategory, setSelectedCategory] = useState(null);
   const [selectedRating, setSelectedRating] = useState(null);
   const [selectedPrice, setSelectedPrice] = useState([1000, 5000]);
 
+// aymen filter combo bpx : city
+const [cities, setCities] = useState([
+      { id: 1, label: 'New York' },
+      { id: 2, label: 'Los Angeles' },
+      { id: 3, label: 'Chicago' },
+      { id: 4, label: 'San Francisco' },
+    ]);
+/////////////////////////////////////////////////
+
   const [cuisines, setCuisines] = useState([
     { id: 1, checked: false, label: 'American' },
     { id: 2, checked: false, label: 'Chinese' },
     { id: 3, checked: false, label: 'Italian' },
+    { id: 4, checked: false, label: 'ff' },
   ]);
 
   const [list, setList] = useState(dataList);
