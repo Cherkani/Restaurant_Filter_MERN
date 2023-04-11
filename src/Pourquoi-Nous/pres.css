@@ -1,0 +1,12 @@
+/* styles pour le corps du document */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #000;
+}
+
+/* styles pour l'en-tête de la page */
+#title {
+    color: #3bb19b;
+}
+
