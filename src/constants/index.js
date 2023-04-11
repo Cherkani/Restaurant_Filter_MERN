@@ -10,6 +10,18 @@ export const categoryList = [
     label: "🍕 Dishes",
   },
 ];
+export const categoryList2 = [
+  {
+    id: 1,
+    value: "a",
+    label: "🚩 a",
+  },
+  {
+    id: 2,
+    value: "b",
+    label: "🍕 b",
+  },
+];
 
 export const ratingList = [
   {
@@ -50,8 +62,8 @@ export const dataList = [
     rating: 5,
     price: 2500,
     coverSrc: "/images/places/ameri.jpg",
-    ville: "a",
-    zone: "a",
+    cities: "a",
+    zone: "aa",
   },
   {
     id: 2,
@@ -63,8 +75,8 @@ export const dataList = [
     rating: 4,
     price: 1000,
     coverSrc: "/images/places/italian.webp",
-    ville: "a",
-    zone: "b",
+    cities: "a",
+    zone: "ab",
   },
   {
     id: 3,
@@ -76,8 +88,8 @@ export const dataList = [
     rating: 3,
     price: 2000,
     coverSrc: "/images/places/china.jpg",
-    ville: "a",
-    zone: "c",
+    cities: "a",
+    zone: "ac",
   },
   {
     id: 4,
@@ -89,8 +101,8 @@ export const dataList = [
     rating: 1,
     price: 1800,
     coverSrc: "/images/places/sea.jpg",
-    ville: "b",
-    zone: "a",
+    cities: "b",
+    zone: "ba",
   },
   {
     id: 5,
@@ -103,8 +115,8 @@ export const dataList = [
     price: 2000,
     coverSrc: "/images/places/italiian.jpg",
 
-    ville: "b",
-    zone: "b",
+    cities: "b",
+    zone: "bb",
   },
   {
     id: 6,
@@ -117,8 +129,8 @@ export const dataList = [
     price: 3500,
     coverSrc: "/images/places/fookyew2.jpg",
 
-    ville: "b",
-    zone: "c",
+    cities: "b",
+    zone: "bc",
   },
   {
     id: 7,
@@ -131,8 +143,8 @@ export const dataList = [
     price: 2200,
     coverSrc: "/images/dishes/nacho-burger.jpg",
 
-    ville: "c",
-    zone: "a",
+    cities: "c",
+    zone: "ca",
   },
   {
     id: 8,
@@ -144,8 +156,8 @@ export const dataList = [
     rating: 1,
     price: 1900,
     coverSrc: "/images/dishes/Mushroom-Risotto-Recipe-1-1200.jpg",
-    ville: "c",
-    zone: "b",
+    cities: "c",
+    zone: "cb",
   },
   {
     id: 9,
@@ -157,8 +169,8 @@ export const dataList = [
     rating: 4,
     price: 2750,
     coverSrc: "/images/dishes/shiitake-salmon-fried-rice-0218-103230720.jpg",
-    ville: "c",
-    zone: "c",
+    cities: "c",
+    zone: "cc",
   },
   {
     id: 10,
@@ -170,8 +182,8 @@ export const dataList = [
     rating: 2,
     price: 4350,
     coverSrc: "/images/dishes/pesto-chicken.jpg",
-    ville: "c",
-    zone: "c",
+    cities: "d",
+    zone: "da",
   },
   {
     id: 11,
@@ -183,8 +195,8 @@ export const dataList = [
     rating: 3,
     price: 3300,
     coverSrc: "/images/dishes/as-tomato-bruschetta-articleLarge.jpg",
-    ville: "c",
-    zone: "c",
+    cities: "db",
+    zone: "db",
   },
   {
     id: 12,
@@ -196,8 +208,8 @@ export const dataList = [
     rating: 2,
     price: 4100,
     coverSrc: "/images/dishes/dimsums.jpg",
-    ville: "c",
-    zone: "c",
+    cities: "d",
+    zone: "dc",
   },
   {
     id: 13,
@@ -208,8 +220,8 @@ export const dataList = [
     cuisine: "ff",
     rating: 2,
     price: 4100,
-    coverSrc: "/images/dishes/dimsums.jpg",
-    ville: "c",
-    zone: "c",
+    coverSrc: "/images/places/ameri.jpg",
+    cities: "c",
+    zone: "dc",
   },
 ];
