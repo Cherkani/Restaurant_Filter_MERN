@@ -5,6 +5,7 @@ import Footer from './components/Footer/Footer';
 import ContactForm from './components/ContactForm/ContactForm';
 import AboutUs from './components/AboutUs/AboutUs';
 import Presentation from './Pourquoi-Nous/Presentation';
+import Map from './components/MAP/Map'
 
 
 import './App.css';
@@ -27,7 +28,7 @@ function App() {
             <Route path="/ContactForm" element={<ContactForm />} />
             <Route path="/About" element={<AboutUs />} />
             <Route path="/test" element={< Home />} />
-            <Route path="/ContForm" element={< Home />} />
+            <Route path="/Map" element={< Map />} />
             <Route path="/Presentation" element={< Presentation />} />
 
 
