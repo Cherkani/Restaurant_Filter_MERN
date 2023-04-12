@@ -1,20 +1,15 @@
 import React, { Component } from "react";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from "google-maps-react";
-
+import { dataList } from "../../constants/index";
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      markers: [
-        { lat: 44.233334, lng: -8.500000, name: "Marker 1" },
-        { lat: 53.233334, lng: -9.500000, name: "Marker " },
-        { lat: 23.233334, lng: -10.500000, name: "Marker 2" },
-        { lat: 73.233334, lng: -11.500000, name: "Marker 3" },
-        { lat: 93.233334, lng: -12.500000, name: "Marker 4" },
-        { lat: 83.233334, lng: -13.500000, name: "Marker 5" },
-        { lat: 13.233334, lng: -14.500000, name: "Marker 6" },
-        { lat: 53.233334, lng: -15.500000, name: "Marker 7" },
-      ],
+      markers: dataList.map((data) => ({ // Utiliser la méthode map pour créer un nouvel array d'objets avec les valeurs de dataList
+        lat: data.latitude,
+        lng: data.longitude,
+        name: data.title
+      }))
     };
   }
 
