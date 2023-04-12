@@ -67,6 +67,7 @@ export const dataList = [
     latitude: 33.5949636,
     longitude: -7.6780468,
   },
+  
   {
     id: 1,
     title: "door urban",
