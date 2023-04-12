@@ -55,7 +55,7 @@ const [cities, setCities] = useState([
     { id: 1, checked: false, label: 'American' },
     { id: 2, checked: false, label: 'Chinese' },
     { id: 3, checked: false, label: 'Italian' },
-    { id: 4, checked: false, label: 'ff' },
+    { id: 4, checked: false, label: 'Maroccain' },
   ]);
 
   const [list, setList] = useState(dataList);
