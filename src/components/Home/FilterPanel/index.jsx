@@ -7,6 +7,7 @@ import './styles.css';
 import CheckboxProton2 from '../../common/CheckboxProton/index2';
 
 
+//import { updateAllElementsToFalse } from './zoneUtils.js';
 
 const FilterPanel = ({
   selectedCategory,
@@ -20,7 +21,8 @@ const FilterPanel = ({
   cities,
   zone,
   changeChecked2,
-  changeChecked3,
+  setZone,
+  updateAllElementsToFalse,
   foodState,
   setFoodState,
 }) => {
@@ -28,6 +30,7 @@ const FilterPanel = ({
   
 //////////////////////////:aymen
 const handleComboChange = (e) => {
+  
   const selectedFood = e.target.value;
   console.log(selectedFood);//////////////pour tester
   if (selectedFood === 'null') {
@@ -40,6 +43,7 @@ const handleComboChange = (e) => {
         {/* eviter affichage redondant*/}
         <div className='input-group'>
         <table>
+          <br/>
   <p className='label'>Zone:</p>
   {Array.from(new Set(zone.filter(zoneItem => parseInt(selectedFood) === zoneItem.id2).map(zoneItem => zoneItem.label))).map(uniqueLabel => {
     const zoneItem = zone.find(item => item.label === uniqueLabel);
@@ -119,23 +123,28 @@ const handleComboChange = (e) => {
    
  
       <div className='flex-align'>
-        <select
+      <p className='label'>Ville</p>
+        <select 
         
-          className='dropdown show'
+          className="form-control"
           value={comboValue}
           onChange={handleComboChange}
+          onClick={updateAllElementsToFalse}
         >
           <option value='null' className="dropdown-item">-- Aucune ville --</option>
+          
           {cities.map((cities) => (
             <option  className="dropdown-item" value={cities.id} key={cities.id}>
               {cities.label}
             </option>
           ))}
         </select>
-        <button className='btn btn-secondary ' onClick={handleReload}>
+        
+        {foodState}
+        <button style={{ backgroundColor: '#3bb19b', borderColor: '#3bb19b' }}
+          className='btn btn-primary ' onClick={handleReload}>
           Recharger
         </button>
-        {foodState}
       </div>
     </div>
   );

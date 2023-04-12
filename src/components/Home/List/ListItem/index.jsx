@@ -2,12 +2,14 @@ import React from 'react';
 import './styles.css';
 
 const ListItem = ({
-  item: { coverSrc, title, price, deliveryFee, serviceTime, rating ,latitude,longitude},
+  item: { coverSrc, title, price, serviceTime, rating, latitude, longitude },
 }) => {
+
+
+ 
+
   const redirectToMarker = (lat, lng) => {
-    // Redirige vers marqueur en ouvrant un nouvel onglet
     window.open(`https://maps.google.com/maps?q=${lat},${lng}`, '_blank');
-    //window.location.href = `https://maps.google.com/maps?q=${lat},${lng}`;
   };
 
   return (
@@ -19,16 +21,27 @@ const ListItem = ({
       </header>
       <footer>
         <p>
-          <b>{serviceTime}</b> <span> Delivery Fee {Math.floor(Math.random() * (8)) +1} dh</span>
+          <b>      { Math.floor(Math.random() * (15)) + 10}       -       { Math.floor(Math.random() * (5)) + 30} min  </b>
+         
+            <span> Delivery Fee { Math.floor(Math.random() * (8)) + 7} dh</span>
+  
         </p>
-        <p>
-          <b>${price}</b>
-        
-          <button onClick={() => redirectToMarker(latitude, longitude)}>
-            Voir position
-          </button>
-        </p>
+        {price && (
+          <p>
+            <b>${price}</b>
+          </p>
+        )}
       </footer>
+      <div>
+        <button
+          style={{ backgroundColor: '#3bb19b', borderColor: '#3bb19b' }}
+          className='btn btn-primary d-block mx-auto my-4'
+          type='submit'
+          onClick={() => redirectToMarker(latitude, longitude)}
+        >
+          Voir position
+        </button>
+      </div>
     </div>
   );
 };

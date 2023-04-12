@@ -48,6 +48,10 @@ const [cities, setCities] = useState([
     
         ]);
 
+///////////////////////////////
+
+
+
     
 ///////////////////////////////////////////////
 
@@ -79,6 +83,16 @@ const handleChangeChecked2 = (id) => {
   );
   setZone(changeCheckedCities);
 };
+///////////////////////////////////////////////////////////////////////////////////////
+
+const updateAllElementsToFalse = () => {
+  setZone(zone => {
+    
+    const updatedZone = zone.map(item => ({ ...item, checked: false }));
+    return updatedZone;
+  });
+};
+
 
 
 ////////////////------------
@@ -184,6 +198,8 @@ const citiesChecked = zone
             cities={cities}
             zone={zone}
             changeChecked2={handleChangeChecked2}
+            setZone={setZone}
+            updateAllElementsToFalse={updateAllElementsToFalse}
             /////
             changePrice={handleChangePrice}
             setFoodState={setFoodState}
