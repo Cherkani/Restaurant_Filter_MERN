@@ -35,6 +35,9 @@ function NavBar() {
               <Nav.Link as={Link} to={"/Map"}>
               Nos Restaurant
               </Nav.Link>
+              <Nav.Link as={Link} to={"/Formulaire"}>
+                Formulaire
+              </Nav.Link>
               
 
               <Nav.Link as={Link} to={"/ContactForm"}>

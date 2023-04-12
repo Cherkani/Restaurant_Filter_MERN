@@ -6,7 +6,7 @@ import ContactForm from './components/ContactForm/ContactForm';
 import AboutUs from './components/AboutUs/AboutUs';
 import Presentation from './Pourquoi-Nous/Presentation';
 import Map from './components/MAP/Map'
-
+import Formulaire from './components/Email/Formulaire'
 
 import './App.css';
 //import 'bootstrap/dist/css/bootstrap.min.css';
@@ -30,6 +30,8 @@ function App() {
             <Route path="/test" element={< Home />} />
             <Route path="/Map" element={< Map />} />
             <Route path="/Presentation" element={< Presentation />} />
+            <Route path="/Formulaire" element={< Formulaire />} />
+
 
 
             

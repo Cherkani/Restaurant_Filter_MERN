@@ -10,6 +10,8 @@ app.use(cors());
 
 
 
+
+const EmailSender = require('./controllers/EmailSender');
 const cityController = require('./controllers/CityController');
 const zoneController = require('./controllers/ZoneController');
 const resataurantController = require('./controllers/RestaurantController');
@@ -27,6 +29,8 @@ app.use(express.json());
 app.use('/api/cities', cityController);
 app.use('/api/zones', zoneController);
 app.use('/api/restaurants', resataurantController);
+app.use('/api/Formulaire', EmailSender);
+
 
 
 const port =  3000;
