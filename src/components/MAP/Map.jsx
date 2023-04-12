@@ -14,22 +14,22 @@ class App extends Component {
         { lat: 83.233334, lng: -13.500000, name: "Marker 5" },
         { lat: 13.233334, lng: -14.500000, name: "Marker 6" },
         { lat: 53.233334, lng: -15.500000, name: "Marker 7" },
-
-
-
-
-
-
       ],
     };
   }
+
+  redirectToMarker = (lat, lng) => {
+    // redirige vers marqueur
+    //window.location.href = `https://maps.google.com/maps?q=${lat},${lng}`;
+    window.open(`https://maps.google.com/maps?q=${lat},${lng}`, '_blank');
+  };
 
   renderMarkers() {
     return this.state.markers.map((marker, index) => (
       <Marker
         key={index}
         position={{ lat: marker.lat, lng: marker.lng }}
-        onClick={this.onMarkerClick}
+        onClick={() => this.redirectToMarker(marker.lat, marker.lng)} // Ajouter le gestionnaire d'événement de clic pour le marqueur
         name={marker.name}
       />
     ));

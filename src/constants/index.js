@@ -97,5 +97,4 @@ export const dataList = [
     latitude: 35.6895,
     longitude: 139.6917,
   },
-  // ... continue avec les autres éléments de la liste
 ];
