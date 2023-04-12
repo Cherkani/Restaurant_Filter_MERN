@@ -13,8 +13,8 @@ export default function Footer() {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-        <div className="me-5 d-none d-lg-block">
-          <span></span>
+      <div className="me-5 d-none d-lg-block">
+        <h6 className="text-uppercase fw-bold mb-4">Nos reseaux:</h6>
         </div>
 
         <div>
@@ -37,61 +37,60 @@ export default function Footer() {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">
                 <MDBIcon icon="gem" className="me-3" />
-                Company name
+                FoodieFinder
               </h6>
-              <p>
-                Here you can use rows and columns to organize your footer
-                content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit.
+              <p className="">
+              <b>FoodieFinder</b> est un site web de restauration qui permet de localiser les restaurants en fonction des villes/zones en utilisant une API de géolocalisation. Les coordonnées récupérées sont ensuite utilisées pour afficher les restaurants correspondants sur la carte à l'aide de l'API Google Maps Places.
+              
               </p>
+            </MDBCol>
+            <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
+              <h6 className="text-uppercase fw-bold mb-4">Liens utiles</h6>
+              <p>
+                <a href="http://localhost:3002/Presentation" className="text-reset">
+                  Pourquoi FoodieFinder?
+                </a>
+              </p>
+              <p>
+                <a href="http://localhost:3002/About" className="text-reset">
+                  Nos valeurs
+                </a>
+              </p>
+              <p>
+                <a href="http://localhost:3002/" className="text-reset">
+                  Trouver un restaurant
+                </a>
+              </p>
+              <p>
+                <a href="http://localhost:3002/Map" className="text-reset">
+                  Nos restaurant
+                </a>
+              </p>
+              <p>
+                <a href="http://localhost:3002/ContactForm" className="text-reset">
+                  Contactez nous
+                </a>
+              </p>
+            
             </MDBCol>
 
-            <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Products</h6>
-              <p>
-                <a href="#!" className="text-reset">
-                  Angular
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  React
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Vue
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Laravel
-                </a>
-              </p>
-            </MDBCol>
+           
 
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-4">Useful links</h6>
+              <h6 className="text-uppercase fw-bold mb-4">Nos devloppeurs</h6>
               <p>
-                <a href="#!" className="text-reset">
-                  Pricing
+                <a href="https://www.linkedin.com/in/mohammed-belkarradi-770954211/" className="text-reset">
+                  BELKARRADI Mohammed
                 </a>
               </p>
               <p>
-                <a href="#!" className="text-reset">
-                  Settings
+                <a href="https://www.linkedin.com/in/mohammed-belkarradi-770954211/" className="text-reset">
+                  CHERKANI Aymen
                 </a>
               </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Orders
-                </a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">
-                  Help
-                </a>
-              </p>
+             
+             
+            
             </MDBCol>
 
             <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
