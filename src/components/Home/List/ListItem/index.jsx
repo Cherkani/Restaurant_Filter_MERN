@@ -19,17 +19,16 @@ const ListItem = ({
       </header>
       <footer>
         <p>
-          <b>{serviceTime}</b> <span> Delivery Fee {deliveryFee} dh</span>
+          <b>{serviceTime}</b> <span> Delivery Fee {Math.floor(Math.random() * (8)) +1} dh</span>
         </p>
         <p>
           <b>${price}</b>
         
-        
+          <button onClick={() => redirectToMarker(latitude, longitude)}>
+            Voir position
+          </button>
         </p>
       </footer>
-      <div>  <button style={{backgroundColor:"#3bb19b",borderColor:"#3bb19b"}} className= "btn btn-primary d-block mx-auto my-4" type="submit" onClick={() => redirectToMarker(latitude, longitude)}>
-            Voir position
-          </button></div>
     </div>
   );
 };
