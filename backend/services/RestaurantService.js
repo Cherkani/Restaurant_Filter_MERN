@@ -1,4 +1,4 @@
-const Restaurant = require('../models/Restaurant');
+const Restaurant = require("../models/Restaurant");
 
 class RestaurantService {
   constructor(restaurantModel) {
@@ -20,17 +20,21 @@ class RestaurantService {
       const restaurents = await this.restaurantModel.find({ city: cityId });
       return restaurents;
     } catch (error) {
-      throw new Error(`Unable to fetch restaurent for city ${cityId}: ${error}`);
+      throw new Error(
+        `Unable to fetch restaurent for city ${cityId}: ${error}`
+      );
     }
   }
 
-//#GetRestaurent by zone ID
+  //#GetRestaurent by zone ID
   async getRestaurentByZoneId(zoneId) {
     try {
       const restaurents = await this.restaurantModel.find({ zone: zoneId });
       return restaurents;
     } catch (error) {
-      throw new Error(`Unable to fetch restaurent for zone ${cityId}: ${error}`);
+      throw new Error(
+        `Unable to fetch restaurent for zone ${zoneId}: ${error}`
+      );
     }
   }
 
@@ -61,7 +65,7 @@ class RestaurantService {
         throw new Error(`restaurent not found with ID ${id}`);
       }
       existingRestaurant.name = updatedRestaurant.name;
-      existingRestaurant.priceMax = updatedRestaurant.priceMax;
+      existingRestaurant.price = updatedRestaurant.price;
       existingRestaurant.cuisine = updatedRestaurant.cuisine;
       existingRestaurant.zone = updatedRestaurant.zone;
 
@@ -85,11 +89,6 @@ class RestaurantService {
       throw new Error(`Unable to delete Restaurent with ID ${id}: ${error}`);
     }
   }
-  
-
 }
-
-
-
 
 module.exports = RestaurantService;
