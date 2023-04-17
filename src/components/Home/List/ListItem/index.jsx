@@ -5,13 +5,9 @@ const ListItem = ({
   item: { coverSrc, title, price, serviceTime, rating, latitude, longitude },
 }) => {
 
-
- 
-
   const redirectToMarker = (lat, lng) => {
     window.open(`https://maps.google.com/maps?q=${lat},${lng}`, '_blank');
   };
-
   return (
     <div className='listItem-wrap'>
       <img src={coverSrc} alt='' />

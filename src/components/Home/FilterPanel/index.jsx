@@ -6,6 +6,8 @@ import SliderProton from '../../common/SliderProton';
 import './styles.css';
 import CheckboxProton2 from '../../common/CheckboxProton/index2';
 
+import DropdownMenu from './DropdownMenu'
+import ParentComponent from './ParentComponent'
 
 //import { updateAllElementsToFalse } from './zoneUtils.js';
 
@@ -75,79 +77,80 @@ const handleComboChange = (e) => {
   };
 /////////////////////////////////////////////////
   return (
-    <div>
-      <div className='input-group'>
-        <p className='label'>Category</p>
-        <FilterListToggle
-          options={categoryList}
-          value={selectedCategory}
-          selectToggle={selectCategory}
-        />
-      </div>
+//     <div>
+//       <div className='input-group'>
+//         <p className='label'>Category</p>
+//         <FilterListToggle
+//           options={categoryList}
+//           value={selectedCategory}
+//           selectToggle={selectCategory}
+//         />
+//       </div>
       
-      <div className='input-group '>
-        <table>
+//       <div className='input-group '>
+//         <table>
 
         
-        <p className='label'>Cuisine</p>
-        {cuisines.map((cuisine) => (
+//         <p className='label'>Cuisine</p>
+//         {cuisines.map((cuisine) => (
           
-            <tr>
-          <CheckboxProton
-            key={cuisine.id}
-            cuisine={cuisine}
-            changeChecked={changeChecked}
-          /><br />
-          </tr>
+//             <tr>
+//           <CheckboxProton
+//             key={cuisine.id}
+//             cuisine={cuisine}
+//             changeChecked={changeChecked}
+//           /><br />
+//           </tr>
            
-        ))}
-       </table>
-      </div>
-      <div className='input-group'>
-        <p className='label-range'>Price Range</p>
-        <SliderProton value={selectedPrice} changePrice={changePrice} />
-      </div>
-      <div className='input-group'>
-        <p className='label'>Star Rating</p>
-        <FilterListToggle
-          options={ratingList}
-          value={selectedRating}
-          selectToggle={selectRating}
-        />
-      </div>
+//         ))}
+//        </table>
+//       </div>
+//       <div className='input-group'>
+//         <p className='label-range'>Price Range</p>
+//         <SliderProton value={selectedPrice} changePrice={changePrice} />
+//       </div>
+//       <div className='input-group'>
+//         <p className='label'>Star Rating</p>
+//         <FilterListToggle
+//           options={ratingList}
+//           value={selectedRating}
+//           selectToggle={selectRating}
+//         />
+//       </div>
 
 
 
-{/* aymen */}
+// {/* aymen */}
 
    
  
-      <div className='flex-align'>
-      <p className='label'>Ville</p>
-        <select 
-        
-          className="form-control"
-          value={comboValue}
-          onChange={handleComboChange}
-          onClick={updateAllElementsToFalse}
-        >
-          <option value='null' className="dropdown-item">-- Aucune ville --</option>
-          
-          {cities.map((cities) => (
-            <option  className="dropdown-item" value={cities.id} key={cities.id}>
-              {cities.label}
-            </option>
-          ))}
-        </select>
-        
-        {foodState}
-        <button style={{ backgroundColor: '#3bb19b', borderColor: '#3bb19b' }}
-          className='btn btn-primary ' onClick={handleReload}>
-          Recharger
-        </button>
-      </div>
+       <div>
+      {/* Autres composants ou éléments de l'application */}
+      <ParentComponent />
     </div>
+    // </div>
   );
 };
 {/* aymen */}
 export default FilterPanel;
+
+
+// import React from 'react';
+// import './styles.css';
+
+
+
+// import ParentComponent from './ParentComponent';
+
+// //import { updateAllElementsToFalse } from './zoneUtils.js';
+
+// const FilterPanel = () => {
+// return (
+// <div>
+// {/* Autres composants ou éléments de l'application */}
+// <ParentComponent />
+// </div>
+// );
+// }
+
+// export default FilterPanel;

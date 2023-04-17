@@ -1,3 +1,90 @@
+// import axios from "axios";
+
+// const NewData = async () => {
+//   try {
+//     const response = await axios.get("http://127.0.0.1:3000/api/restaurants");
+//     const data = response.data;
+//     const dataLista = data.map((restaurant) => ({
+//       id: restaurant._id,
+//       title: restaurant.title,
+//       category: restaurant.category,
+//       cuisine: restaurant.cuisine,
+//       cities: restaurant.cities,
+//       zone: restaurant.zone,
+//       latitude: restaurant.latitude,
+//       longitude: restaurant.longitude,
+//     }));
+//     console.log(dataLista);
+
+//     return dataLista;
+//   } catch (error) {
+//     console.error(error);
+//     // Handle the error as appropriate (e.g. show error message, log error)
+//     // Return a default value or throw an error if needed
+//   }
+// };
+
+// export const dataList = await NewData();
+/*import { useState,useEffect } from "react";
+function Test(){
+  const [data,setData]=useState([]);
+  useEffect(()=>{
+    fetch("http://127.0.0.1:3000/api/restaurants").then((element)=>{
+      return element.json()
+    }).then(data=>{
+      setData(data);
+    })
+  },[]);
+
+    return (
+      <p>HELLO</p>
+    )
+}*/
+
+// const dataList=[];
+
+// const getData=async (callback)=>{
+
+//   fetch("http://127.0.0.1:3000/api/restaurants").then((element)=>{
+//     return element.json()
+//   }).then(data=>{
+//       dataList=data;
+//       callback(data)
+//   })
+
+// }
+
+// await getData();
+
+// import axios from "axios";
+
+// const NewData = async () => {
+//   try {
+
+//     const response = await axios.get("http://127.0.0.1:3000/api/restaurants");
+//     const data = response.json();
+//     const dataLista = data.map((restaurant) => ({
+//       id: restaurant._id,
+//       title: restaurant.title,
+//       category: restaurant.category,
+//       cuisine: restaurant.cuisine,
+//       cities: restaurant.cities,
+//       zone: restaurant.zone,
+//       latitude: restaurant.latitude,
+//       longitude: restaurant.longitude,
+//     }));
+//     console.log(dataLista);
+
+//     return dataLista;
+//   } catch (error) {
+//     console.error(error);
+//     // Handle the error as appropriate (e.g. show error message, log error)
+//     // Return a default value or throw an error if needed
+//   }
+// };
+
+// const dataList =[NewData()];
+
 export const categoryList = [
   {
     id: 1,
@@ -51,22 +138,8 @@ export const ratingList = [
   },
 ];
 
+// Appeler le composant NewData et obtenir les données formatées
 export const dataList = [
-  {
-    id: 1,
-    title: "lounge resort",
-
-    category: "place",
-    cuisine: "american",
-    rating: 5,
-    price: 2500,
-    coverSrc: "/images/places/ameri.jpg",
-    cities: "a",
-    zone: "aa",
-    latitude: 33.5949636,
-    longitude: -7.6780468,
-  },
-  
   {
     id: 1,
     title: "door urban",
@@ -76,37 +149,9 @@ export const dataList = [
     rating: 4,
     price: 1000,
     coverSrc: "/images/places/italian.webp",
-    cities: "a",
+    cities: "",
     zone: "ab",
-    latitude: 40.6895,
-    longitude: -7.6780878,
-  },
-  {
-    id: 1,
-    title: "chow",
-
-    category: "place",
-    cuisine: "chinese",
-    rating: 3,
-    price: 2000,
-    coverSrc: "/images/places/china.jpg",
-    cities: "a",
-    zone: "ac",
-    latitude: 40.6895,
-    longitude: 139.6917,
-  },
-  {
-    id: 4,
-    title: "45454545454",
-
-    category: "place",
-    cuisine: "chinese",
-    rating: 3,
-    price: 2000,
-    coverSrc: "/images/places/china.jpg",
-    cities: "a",
-    zone: "ac",
-    latitude: 35.6895,
-    longitude: 199.6917,
+    latitude: 33.596774390233364,
+    longitude: -7.67300131717932,
   },
 ];

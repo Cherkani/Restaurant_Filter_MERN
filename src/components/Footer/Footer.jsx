@@ -84,7 +84,7 @@ export default function Footer() {
                 </a>
               </p>
               <p>
-                <a href="https://www.linkedin.com/in/mohammed-belkarradi-770954211/" className="text-reset">
+                <a href="https://www.linkedin.com/in/aymen-cherkani-a68b1224a/" className="text-reset">
                   CHERKANI Aymen
                 </a>
               </p>
@@ -104,6 +104,10 @@ export default function Footer() {
                 mbelkarradi@gmail.com
               </p>
               <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                cherkaniaymen@gmail.com
+              </p>
+              <p>
                 <MDBIcon icon="phone" className="me-3" /> +212 60-41-30-90
               </p>
               <p>
@@ -118,7 +122,7 @@ export default function Footer() {
         className="text-center p-4"
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
-        © 2022 BELKARRADI MOHAMMED
+        © 2022 BELKARRADI MOHAMMED & CHERKANI AYMEN
       </div>
     </MDBFooter>
   );
