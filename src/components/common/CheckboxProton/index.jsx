@@ -27,7 +27,7 @@ const useStyles = makeStyles({
 
 const CheckboxProton = ({ changeChecked, cuisine }) => {
   const classes = useStyles();
-  const { checked, label, id } = cuisine;
+  
   return (
     <div>
       <FormControlLabel
@@ -42,12 +42,12 @@ const CheckboxProton = ({ changeChecked, cuisine }) => {
               root: classes.root,
             }}
             size='small'
-            checked={checked}
-            onChange={() => changeChecked(id)}
+            // checked={checked}
+            onChange={() => changeChecked(cuisine)}
             inputProps={{ 'aria-label': 'checkbox with small size' }}
           />
         }
-        label={label}
+        label={cuisine}
       />
     </div>
   );

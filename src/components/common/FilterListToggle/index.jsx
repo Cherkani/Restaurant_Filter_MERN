@@ -3,6 +3,9 @@ import ToggleButton from '@material-ui/lab/ToggleButton';
 import ToggleButtonGroup from '@material-ui/lab/ToggleButtonGroup';
 import { makeStyles } from '@material-ui/core/styles';
 
+import RestaurantIcon from '@material-ui/icons/Restaurant';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
+
 const useStyles = makeStyles({
   root: {
     width: '100%',
@@ -38,17 +41,33 @@ const FilterListToggle = ({ options, value, selectToggle }) => {
   const classes = useStyles();
   return (
     <ToggleButtonGroup
-      value={value}
-      exclusive
-      onChange={selectToggle}
-      className={classes.root}
-    >
-      {options.map(({ label, id, value }) => (
-        <ToggleButton className={classes.toggle} key={id} value={value}>
-          {label}
-        </ToggleButton>
-      ))}
-    </ToggleButtonGroup>
+    value={value}
+    exclusive
+    onChange={selectToggle}
+    className={classes.root}
+  >
+    {options.map(({ label, id, value }) => (
+      <ToggleButton className={classes.toggle} key={id} value={value}>
+        {/* {label}
+        {label === "Place" && <LocationOnIcon />}
+        {label === "dish" && <RestaurantIcon />} */}
+         {label === "Place" && (
+  <span style={{ display: "flex", alignItems: "center" }}>
+    <LocationOnIcon />
+    <span style={{ marginLeft: "5px" }}>{label}</span>
+  </span>
+)}
+{label === "dish" && (
+  <span style={{ display: "flex", alignItems: "center" }}>
+    <RestaurantIcon />
+    <span style={{ marginLeft: "5px" }}>{label}</span>
+  </span>
+)}
+        
+      </ToggleButton>
+    ))}
+  </ToggleButtonGroup>
+
   );
 };
 

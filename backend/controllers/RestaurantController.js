@@ -4,6 +4,10 @@ const Restaurant = require("../models/Restaurant");
 const RestaurantService = require("../services/RestaurantService");
 const restaurantService = new RestaurantService(Restaurant);
 
+///////////////////////
+
+/////////////////////////////
+
 router.get("/", async (req, res) => {
   try {
     const restaurants = await restaurantService.getAllRestaurents();
@@ -35,10 +39,10 @@ router.get("/city/:cityId", async (req, res) => {
     res.status(500).send("Server Error");
   }
 });
-router.get("/zones/:zonId", async (req, res) => {
+router.get("/zone/:zoneId", async (req, res) => {
   try {
     const restaurents = await restaurantService.getRestaurentByZoneId(
-      req.params.zonId
+      req.params.zoneId
     );
     res.json(restaurents);
   } catch (err) {

@@ -27,6 +27,8 @@ const FilterPanel = ({
   updateAllElementsToFalse,
   foodState,
   setFoodState,
+  list,
+  setList,
 }) => {
   const [comboValue, setComboValue] = useState('null');
   
@@ -77,58 +79,59 @@ const handleComboChange = (e) => {
   };
 /////////////////////////////////////////////////
   return (
-//     <div>
-//       <div className='input-group'>
-//         <p className='label'>Category</p>
-//         <FilterListToggle
-//           options={categoryList}
-//           value={selectedCategory}
-//           selectToggle={selectCategory}
-//         />
-//       </div>
+    <div>
+      <div className='input-group'>
+        <p className='label'>Category</p>
+        <FilterListToggle
+          options={categoryList}
+          value={selectedCategory}
+          selectToggle={selectCategory}
+        />
+      </div>
       
-//       <div className='input-group '>
-//         <table>
+      <div className='input-group '>
+        <table>
 
         
-//         <p className='label'>Cuisine</p>
-//         {cuisines.map((cuisine) => (
+        <p className='label'>Cuisine</p>
+        {cuisines.map((cuisine) => (
           
-//             <tr>
-//           <CheckboxProton
-//             key={cuisine.id}
-//             cuisine={cuisine}
-//             changeChecked={changeChecked}
-//           /><br />
-//           </tr>
+            <tr>
+          <CheckboxProton
+            key={cuisine.id}
+            cuisine={cuisine}
+            changeChecked={changeChecked}
+          /><br />
+          </tr>
            
-//         ))}
-//        </table>
-//       </div>
-//       <div className='input-group'>
-//         <p className='label-range'>Price Range</p>
-//         <SliderProton value={selectedPrice} changePrice={changePrice} />
-//       </div>
-//       <div className='input-group'>
-//         <p className='label'>Star Rating</p>
-//         <FilterListToggle
-//           options={ratingList}
-//           value={selectedRating}
-//           selectToggle={selectRating}
-//         />
-//       </div>
+        ))}
+       </table>
+      </div>
+      <div className='input-group'>
+        <p className='label-range'>Price Range</p>
+        <SliderProton value={selectedPrice} changePrice={changePrice} />
+      </div>
+      <div className='input-group'>
+        <p className='label'>Star Rating</p>
+        <FilterListToggle
+          options={ratingList}
+          value={selectedRating}
+          selectToggle={selectRating}
+        />
+      </div>
 
 
 
-// {/* aymen */}
+{/* aymen */}
 
    
  
        <div>
       {/* Autres composants ou éléments de l'application */}
-      <ParentComponent />
+      
     </div>
-    // </div>
+   
+    </div>
   );
 };
 {/* aymen */}
