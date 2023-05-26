@@ -119,7 +119,7 @@ const ParentComponent = ({ onZoneSelect }) => {
 </div>
 <br/>
 
-        <div className="cuisine-filter">
+        {/* <div className="cuisine-filter">
   <h4>Cuisine :</h4>
   
   <br/>
@@ -138,7 +138,25 @@ const ParentComponent = ({ onZoneSelect }) => {
   />
   <br/></div>
   ))}
+</div> */}
+ <h4 style={{ marginBottom: '5px'}}>Cuisine:</h4>
+ <div className="cuisine-filter" style={{backgroundColor: '#f2f2f2', padding: '10px', borderRadius: '5px', marginBottom: '10px'}}>
+ 
+  {cuisineList.map((cuisine) => (
+    <div key={cuisine} style={{marginBottom: '5px'}}>
+      <input type="checkbox" id={cuisine} value={cuisine} checked={selectedCuisine === cuisine} onChange={() => {
+        if (selectedCuisine === cuisine) {
+          setSelectedCuisine(null);
+        } else {
+          setSelectedCuisine(cuisine);
+        }
+      }} style={{marginRight: '5px'}} />
+      <label htmlFor={cuisine} style={{fontSize: '14px'}}>{cuisine}</label>
+      <br/>
+    </div>
+  ))}
 </div>
+
 <br/>
         <h4>Filtrer Ville:</h4>
         <br/>
@@ -176,7 +194,7 @@ const ParentComponent = ({ onZoneSelect }) => {
   >
     Recharger
   </button>
-  <div className="cuisine-filter">
+  {/* <div className="cuisine-filter">
     <h4>Filtrer par cuisine:</h4>
     {cuisineList.map((cuisine) => (
       <div key={cuisine}>
@@ -191,7 +209,7 @@ const ParentComponent = ({ onZoneSelect }) => {
 <label htmlFor={cuisine}>{cuisine}</label>
       </div>
     ))}
-  </div>
+  </div> */}
 
   
 
