@@ -35,9 +35,9 @@ const ParentComponent = ({ onZoneSelect }) => {
     setSelectedCity(cityId);
     setSelectedZone(null);
     try {
-      const restaurantsResponse = await axios.get(`http://localhost:3000/api/restaurants/city/${cityId}`);
+      const restaurantsResponse = await axios.get(`https://backend-seven-virid.vercel.app/api/restaurants/city/${cityId}`);
       setRestaurants(restaurantsResponse.data);
-      const zonesResponse = await axios.get(`http://localhost:3000/api/zones/city/${cityId}`);
+      const zonesResponse = await axios.get(`https://backend-seven-virid.vercel.app/api/zones/city/${cityId}`);
       setZones(zonesResponse.data);
     } catch (error) {
       console.error(error);
@@ -47,7 +47,7 @@ const ParentComponent = ({ onZoneSelect }) => {
   const handleZoneSelect = async (zoneId) => {
     setSelectedZone(zoneId);
     try {
-      const response = await axios.get(`http://localhost:3000/api/restaurants/zone/${zoneId}`);
+      const response = await axios.get(`https://backend-seven-virid.vercel.app/api/restaurants/zone/${zoneId}`);
       setRestaurants(response.data);
       const selectedZoneObj = response.data.find((zone) => zone._id === zoneId);
       onZoneSelect(selectedCity, selectedZoneObj);
@@ -73,7 +73,7 @@ const ParentComponent = ({ onZoneSelect }) => {
 
   const getList = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/api/restaurants");
+      const response = await axios.get("https://backend-seven-virid.vercel.app/api/restaurants");
       setRestaurants(response.data);
       const cuisines = new Set(response.data.map(restaurant => restaurant.cuisine));
       setCuisineList([...cuisines]);

@@ -68,7 +68,7 @@ class App extends Component {
   async componentDidMount() {
     try {
       // Appel à l'API pour obtenir les données des restaurants depuis la base de données
-      const response = await fetch("http://localhost:3000/api/restaurants"); // Mettez l'URL de votre API
+      const response = await fetch("https://backend-seven-virid.vercel.app/api/restaurants"); // Mettez l'URL de votre API
       const data = await response.json();
       this.setState({
         markers: data.map((restaurant) => ({

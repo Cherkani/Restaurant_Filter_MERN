@@ -8,7 +8,7 @@ const DropdownMenu = ({ onCitySelect }) => {
     // Récupérer les données des villes depuis la base de données
     const fetchCities = async () => {
       try {
-        const response = await axios.get('http://localhost:3000/api/cities'); 
+        const response = await axios.get('https://backend-seven-virid.vercel.app/api/cities'); 
         setCities(response.data);
       } catch (error) {
         console.error(error);
