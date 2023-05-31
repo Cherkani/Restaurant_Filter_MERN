@@ -33,13 +33,13 @@ restaurant16: 'https://media.gettyimages.com/id/1395507586/fr/photo/int%C3%A9rie
 
   useEffect(() => {
     setCoverSrc(titleToImage[title] || '');
-  }, [title]);
+  },[title]);
 
   return (
     <div className='listItem-wrap'>
       {coverSrc && <img src={coverSrc} alt='' />}
       <header>
-        <h4>{title}</h4>
+        <h4>seddam</h4>
         <span>🌟{Math.floor(Math.random() * 5) + 1}</span>
       </header>
       <footer>
