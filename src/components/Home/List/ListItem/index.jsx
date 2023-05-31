@@ -26,7 +26,8 @@ restaurant13: 'https://media.gettyimages.com/id/1428594094/fr/photo/int%C3%A9rie
 restaurant14: 'https://media.gettyimages.com/id/1273557779/fr/photo/restaurant-patio.jpg?s=612x612&w=0&k=20&c=6d0kvU8-Xoz2ku9M5iJd3viQlKVJUx1Rn0JcKg4bDMo=',
 restaurant15: 'https://media.gettyimages.com/id/1280031933/fr/photo/petit-caf%C3%A9-ext%C3%A9rieur.jpg?s=612x612&w=0&k=20&c=qWQC4cUrlPBVtCVo16PcWd1gWJODgiBaoAImsU2Vki4=',
 restaurant16: 'https://media.gettyimages.com/id/1395507586/fr/photo/int%C3%A9rieur-de-caf%C3%A9-moderne-avec-de-beaux-meubles.jpg?s=612x612&w=0&k=20&c=Gvzo3mfVoWi4-sY3mXW7hsiFcezh2Kt9dK0GQlQYivI='
-  };
+  
+};
 
   const [coverSrc, setCoverSrc] = useState(titleToImage[title] || '');
 
