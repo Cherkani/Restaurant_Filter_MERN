@@ -24,3 +24,8 @@ https://www.youtube.com/watch?v=cdVkMHpdL74
 
 https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/783ec4f0-885d-40ac-b1d3-a28583e1111b
 
+sur telephone :
+
+
+![phone1](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/ab9cc5e9-181e-4f21-a85c-ad3a111f392e)
+![phone](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/c531d985-38f0-4026-b373-0b0b387a4a9f)
