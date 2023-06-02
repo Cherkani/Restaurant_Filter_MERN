@@ -1,3 +1,4 @@
+/* Default styles for all screen sizes */
 .home {
   display: flex;
   flex-direction: column;
@@ -8,7 +9,6 @@
 .home_list-wrap {
   overflow-y: auto;
 }
-
 .home_panelList-wrap {
   flex: 1;
   display: flex;
@@ -20,4 +20,34 @@
 .home_list-wrap {
   flex: 1;
   padding: 1rem;
+}
+
+/* Styles for mobile devices */
+@media (max-width: 767px) {
+  .home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .home_panelList-wrap,
+  .home_panel-wrap,
+  .home_list-wrap {
+    overflow-y: auto;
+  }
+
+  .home_panelList-wrap {
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap; /* Empêche les éléments de passer à la ligne */
+  }
+  .home_panel-wrap {
+    flex-basis: 280px;
+    padding: 1rem;
+  }
+  .home_list-wrap {
+    flex: 1;
+    padding: 1rem;
+    min-width: 50%; /* Définition d'une largeur minimale pour éviter qu'il prenne tout l'espace */
+    max-width: 50%; /* Définition d'une largeur maximale pour limiter son expansion */
+  }
 }
