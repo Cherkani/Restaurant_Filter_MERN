@@ -26,5 +26,4 @@ https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/783ec4f0-885
 
 sur telephone :
 
-![phone1 (Small)](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/9e97734e-268e-442a-9f9b-36b6e1f382b3)
-![tof (Small)](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/c7832916-feec-464c-90e2-d5741926bf75)
+![phone1 (Small)](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/9e97734e-268e-442a-9f9b-36b6e1f382b3)![tof (Small)](https://github.com/Cherkani/Restaurant_Filter_MERN/assets/124716884/c7832916-feec-464c-90e2-d5741926bf75)
